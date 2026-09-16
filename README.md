@@ -52,6 +52,24 @@ O sistema conta com um menu interativo no terminal que permite:
   - Contagem total de nós com chaves ímpares de cor vermelha.
 
 
+# Árvore Trie (Árvore de Prefixos) em C 🌳🔤
+
+Este repositório contém a implementação de uma **Árvore Trie** (Trie Tree), uma estrutura de dados avançada focada no armazenamento e busca ultrarrápida de strings. O projeto foi desenvolvido como parte dos estudos de estruturas de dados e otimização de buscas em texto.
+
+## 🚀 Diferencial Técnico
+Diferente das árvores binárias convencionais (como AVL ou Rubro-Negra) que baseiam a busca em comparações de chaves inteiras, esta implementação foca na recuperação rápida de informações textuais (complexidade `O(L)`, onde L é o tamanho da palavra). 
+O código se destaca por:
+- **Programação Defensiva:** Verificações de alocação de memória e prevenção de falhas de segmentação.
+- **Gerenciamento de Memória (Freeing):** Um algoritmo cirúrgico de remoção recursiva "bottom-up" que limpa os nós corretamente sem quebrar os prefixos de outras palavras compartilhadas.
+- **Tratamento de Entradas:** Uso da biblioteca `<ctype.h>` para conversão automática das palavras para minúsculo (`tolower`), blindando o sistema contra quebras de índice no vetor do alfabeto.
+
+## ⚙️ Funcionalidades Implementadas
+O sistema restringe o domínio ao alfabeto minúsculo (26 posições) e possui um menu interativo com as seguintes operações:
+- **Inserção Segura:** Alocação dinâmica letra por letra, criando rotas apenas para os caracteres necessários.
+- **Busca Rápida:** Verificação exata de existência de palavras na árvore.
+- **Remoção Inteligente:** Exclusão de uma palavra limpando apenas os nós folha órfãos e desmarcando flags de fim de palavra quando há prefixos sobrepostos.
+
+
 ## 🛠️ Como Compilar e Executar
 
 Certifique-se de ter o compilador `gcc` instalado em sua máquina.
@@ -59,8 +77,9 @@ Certifique-se de ter o compilador `gcc` instalado em sua máquina.
 1. Clone o repositório ou baixe os arquivos.
 2. Abra o terminal na pasta do projeto.
 3. Compile os arquivos C com o comando:
-   ```bash
+```bash
    gcc main.c funcao.c -o programa
+```
 4. Execute os arquivos com o comando:
 ```bash
     # Windows (PowerShell/CMD): 
@@ -69,3 +88,7 @@ Certifique-se de ter o compilador `gcc` instalado em sua máquina.
     # Linux/Mac:
     ./programa
 ```
+
+## 👨‍💻 Autor
+**Kaik Lião Naves Soares**  
+*Estudante de Ciência da Computação - Instituto Federal Goiano (Campus Iporá)*
