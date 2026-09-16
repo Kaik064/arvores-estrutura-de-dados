@@ -90,5 +90,5 @@ Certifique-se de ter o compilador `gcc` instalado em sua máquina.
 ```
 
 ## 👨‍💻 Autor
-**Kaik Lião Naves Soares**  
+**Kaik Henrique Naves Soares**  
 *Estudante de Ciência da Computação - Instituto Federal Goiano (Campus Iporá)*
