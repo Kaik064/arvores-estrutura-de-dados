@@ -61,7 +61,6 @@ Certifique-se de ter o compilador `gcc` instalado em sua máquina.
 3. Compile os arquivos C com o comando:
    ```bash
    gcc main.c funcao.c -o programa
-```
 4. Execute os arquivos com o comando:
 ```bash
     # Windows (PowerShell/CMD): 
